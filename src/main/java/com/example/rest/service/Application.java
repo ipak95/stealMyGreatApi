@@ -1,5 +1,6 @@
 package com.example.rest.service;
 
+import Domain.ControlHub;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,6 +9,8 @@ public class Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
+		ControlHub controlHub = new ControlHub();
+		controlHub.cliCommands();
 	}
 
 }
