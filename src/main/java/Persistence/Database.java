@@ -1,9 +1,9 @@
 package Persistence;
 
-import java.sql.*;
-import java.util.ArrayList;
-import java.sql.Date;
-import java.time.LocalDate;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Types;
 import java.util.HashMap;
 
 public class Database {

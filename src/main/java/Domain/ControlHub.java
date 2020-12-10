@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ControlHub {
 
-    protected void cliCommands() {
+    public void cliCommands() {
 
         System.out.println("Please choose one of the following options (type the corresponding number): ");
         System.out.println("1. Read current machine values.");
