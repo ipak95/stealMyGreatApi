@@ -11,7 +11,7 @@ public class Read {
     /*skal forestille at være en metode der henter en specifik variabels værdi, metoden skal overloades, følgende
     er en liste af getter metoder til at hente disse*/
     public static String getMachineSpeed() {
-        return readValue(6, "::Program:Cube.Status.MachSpeed", "machine speed" ); }
+        return readValue(6, "::Program:Cube.Command.MachSpeed", "machine speed" ); }
     public static String getCurrentProduct() {
         return readValue(6, "::Program:Cube.Admin.Parameter[0].Value", "current product" ); }
     public static String getCurrentBatchId() {
@@ -35,6 +35,17 @@ public class Read {
     }
 
     public static void getAllValues(){
+        getVibration();
+        getHumidity();
+        getTemperature();
+        getMachineSpeed();
+        getCurrentQuantity();
+        getCurrentProduct();
+        getCurrentBatchId();
+        getFailedProductsProduced();
+        getProductsProduced();
+    }
+    public static void getAllTheValues(){
         getVibration();
         getHumidity();
         getTemperature();
